@@ -1,0 +1,39 @@
+---
+title: "Exploración de datos hidrológicos"
+output: html_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r echo=FALSE}
+inp <- read.csv("FDC.csv", na.strings="")
+```
+
+
+```{r}
+```
+
+```{r}
+### Visualizar datos e información del archivo importado
+head(inp)
+dim(inp)
+```
+
+
+```{r}
+```
+}
+
+```{r pressure, echo=FALSE}
+### Gráfico de líneas del hidrograma de lo ríos de Estrella y Banano
+plot(
+  inp[,2], 
+  type = "l", col="navy blue",
+  main = ("Hidrograma de los ríos Estrella y Banano"),
+  xlab = ("Tiempo"),
+  ylab = ("Nivel del caudal")
+)
+ lines(inp[,3], col= "gray")
+```
+
