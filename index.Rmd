@@ -1,5 +1,5 @@
 ---
-title: "Exploración de datos hidrológicos, tarea 02"
+title: "Exploración de datos Hidrológicos, tarea 02"
 output: html_document
 ---
 
